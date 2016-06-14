@@ -1,0 +1,2 @@
+defmodule ElixirBase do
+end
