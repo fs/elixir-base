@@ -4,6 +4,7 @@
 /deps
 erl_crash.dump
 *.ez
+log
 
 
 ### Phoenix ###
