@@ -1,8 +1,8 @@
 # Elixir Base
 
 [![Build Status](https://semaphoreapp.com/api/v1/projects/31b68af8b073708a56e4e005bbcba2af4802816d/76140/shields_badge.png)](https://semaphoreapp.com/fs/elixir-base)
-[![Test Coverage](https://codeclimate.com/github/fs/rails-base/badges/coverage.svg)](https://codeclimate.com/github/fs/elixir-base)
-[![Code Climate](https://codeclimate.com/github/fs/rails-base.png)](https://codeclimate.com/github/fs/elixir-base)
+[![Test Coverage](https://codeclimate.com/github/fs/elixir-base/badges/coverage.svg)](https://codeclimate.com/github/fs/elixir-base)
+[![Code Climate](https://codeclimate.com/github/fs/elixir-base.png)](https://codeclimate.com/github/fs/elixir-base)
 
 Elixir Base is the base Elixir library template used at Flatstack.
 It's based on Elixir 1.2.
@@ -11,8 +11,7 @@ It's based on Elixir 1.2.
 
 ## Development libs
 
-* [Cred](https://github.com/rrrene/credo) and [Rubocop-Rspec](https://github.com/nevir/rubocop-rspec)
-  for reporting violations of the Elixir style guide
+* [Credo](https://github.com/rrrene/credo) for reporting violations of the Elixir style guide
 
 ## Testing libs
 
@@ -84,11 +83,11 @@ Elixir v1.2 should be installed.
 You can use [Elixir buildpack](https://github.com/HashNuke/heroku-buildpack-elixir) for Heroku to be deployed:
 
 * [Heroku Postgres](https://www.heroku.com/postgres) add-on will be used for database.
-* [SendGrid](https://devcenter.heroku.com/articles/sendgrid#ruby-rails) add-on required to be able to send emails.
+* [SendGrid](https://devcenter.heroku.com/articles/sendgrid) add-on required to be able to send emails.
 * [Rollbar](https://elements.heroku.com/addons/rollbar) add-on could be used to application errors.
 
 ```bash
-heroku create --addons=heroku-postgresql,sendgrid,newrelic,rollbar --remote staging rails-base-example --buildpack "https://github.com/HashNuke/heroku-buildpack-elixir.git"
+heroku create --addons=heroku-postgresql,sendgrid,newrelic,rollbar --remote staging elixir-base-example --buildpack "https://github.com/HashNuke/heroku-buildpack-elixir.git"
 heroku config:add HOST="elixir-base-example.herokuapp.com"
 git push staging master
 heroku open
