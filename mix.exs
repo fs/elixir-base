@@ -28,8 +28,9 @@ defmodule ElixirBase.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-     {:exrm, "~> 0.18.1"},
-     {:credo, "~> 0.4", only: [:dev, :test]}
+     {:exrm, "~> 1.0.5"},
+     {:credo, "~> 0.4", only: [:dev, :test]},
+     {:dialyxir, "~> 0.3", only: [:dev]}
    ]
   end
 end

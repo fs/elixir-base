@@ -9,9 +9,12 @@ It's based on Elixir 1.2.
 
 ## Application libs
 
+* [Elixir release manager](https://github.com/bitwalker/exrm) for Elixir's apps release management
+
 ## Development libs
 
 * [Credo](https://github.com/rrrene/credo) for reporting violations of the Elixir style guide
+* [Dialyzer](https://github.com/jeremyjh/dialyxir) for static analyse
 
 ## Testing libs
 
