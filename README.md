@@ -24,6 +24,7 @@ It's based on Elixir 1.2.
 * `bin/setup` - setup required libraries and stuff
 * `bin/quality` - runs code style check tools
 * `bin/ci` - should be used in the CI or locally
+* `bin/build` - to build application release
 * `bin/server` - to run server locally
 
 ## Getting Started
@@ -77,6 +78,10 @@ Elixir v1.2 should be installed.
   ```
 
 ## Deployment
+
+### Elixir Release Manager
+
+Use `./bin/build` script to build Elixir application release.
 
 ### Heroku
 
