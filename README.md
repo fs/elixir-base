@@ -18,6 +18,7 @@ It's based on Elixir 1.2.
 
 * [Credo](https://github.com/rrrene/credo) for reporting violations of the Elixir style guide
 * [Dialyzer](https://github.com/jeremyjh/dialyxir) for static analyse
+* [Eper](https://github.com/massemanet/eper) - Erlang performance related tools
 * [Observer-CLI](https://github.com/zhongwencool/observer_cli) - visualize Erlang nodes on the command line
 
 ## Testing libs

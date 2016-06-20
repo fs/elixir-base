@@ -6,6 +6,7 @@
   "conform": {:hex, :conform, "0.16.0", "f6d6b207c693f2f939af8edeab7c735c4fd48552c63c0a019a52b6d2d98a1ca4", [:mix], [{:neotoma, "~> 1.7.3", [hex: :neotoma, optional: false]}]},
   "credo": {:hex, :credo, "0.4.3", "29fe87aa2ef3c19bf8dd909594b9b79d9e2ed2857a153c00eb3f697f41cb6782", [:mix], [{:bunt, "~> 0.1.6", [hex: :bunt, optional: false]}]},
   "dialyxir": {:hex, :dialyxir, "0.3.3", "2f8bb8ab4e17acf4086cae847bd385c0f89296d3e3448dc304c26bfbe4b46cb4", [:mix], []},
+  "eper": {:hex, :eper, "0.94.0", "f5fb2daa0df8878748e1c598428eda942a173e5121ff35c1d632129b84593a3a", [:rebar, :rebar], []},
   "erlware_commons": {:hex, :erlware_commons, "0.19.0", "7b43caf2c91950c5f60dc20451e3c3afba44d3d4f7f27bcdc52469285a5a3e70", [:rebar3], [{:cf, "0.2.1", [hex: :cf, optional: false]}]},
   "exrm": {:hex, :exrm, "1.0.5", "53ecb20da2f4e5b4c82ea6776824fbc677c8d287bf20efc9fc29cacc2cca124f", [:mix], [{:relx, "~> 3.5", [hex: :relx, optional: false]}]},
   "getopt": {:hex, :getopt, "0.8.2", "b17556db683000ba50370b16c0619df1337e7af7ecbf7d64fbf8d1d6bce3109b", [:rebar], []},
