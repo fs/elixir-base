@@ -2,5 +2,4 @@
 
 set -e
 
-mix deps.get
-mix compile
+mix docs

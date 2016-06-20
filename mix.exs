@@ -5,8 +5,11 @@ defmodule ElixirBase.Mixfile do
     [app: :elixir_base,
      version: "0.0.1",
      elixir: "~> 1.2",
+     name: "Elixir Base",
+     homepage_url: "https://github.com/fs/elixir-base",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
+     docs: [extras: ["README.md"]],
      deps: deps]
   end
 
@@ -33,9 +36,10 @@ defmodule ElixirBase.Mixfile do
      {:monadex, "~> 1.0.2"},
      {:timex, "~> 2.1.6"},
      {:credo, "~> 0.4", only: [:dev, :test]},
-     {:dialyxir, "~> 0.3", only: [:dev]},
-     {:eper, "~> 0.94.0", only: [:dev]},
-     {:observer_cli, "~> 1.0.5", only: [:dev]}
+     {:dialyxir, "~> 0.3", only: :dev},
+     {:eper, "~> 0.94.0", only: :dev},
+     {:ex_doc, "~> 0.11", only: :dev},
+     {:observer_cli, "~> 1.0.5", only: :dev}
    ]
   end
 end
