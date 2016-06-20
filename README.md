@@ -10,17 +10,17 @@ It's based on Elixir 1.2.
 ## Application libs
 
 * [Elixir release manager](https://github.com/bitwalker/exrm) for Elixir's apps release management
-* [Guardsafe](https://github.com/DevL/guardsafe) Macros expanding into code that can be safely used in guard clauses
-* [Monadex](https://github.com/rob-brown/MonadEx) Improve pipelines with monads
+* [Guardsafe](https://github.com/DevL/guardsafe) macros expanding into code that can be safely used in guard clauses
+* [Monadex](https://github.com/rob-brown/MonadEx) improve pipelines with monads
 * [Timex](https://github.com/bitwalker/timex) rich, comprehensive Date/Time library for Elixir projects, with full timezone support
 
 ## Development libs
 
 * [Credo](https://github.com/rrrene/credo) for reporting violations of the Elixir style guide
 * [Dialyzer](https://github.com/jeremyjh/dialyxir) for static analyse
-* [Eper](https://github.com/massemanet/eper) - Erlang performance related tools
-* [ExDoc](https://github.com/elixir-lang/ex_doc) -  tool to generate documentation for your Elixir projects
-* [Observer-CLI](https://github.com/zhongwencool/observer_cli) - visualize Erlang nodes on the command line
+* [Eper](https://github.com/massemanet/eper) Erlang performance related tools
+* [ExDoc](https://github.com/elixir-lang/ex_doc) tool to generate documentation for your Elixir projects
+* [Observer-CLI](https://github.com/zhongwencool/observer_cli) visualize Erlang nodes on the command line
 
 ## Testing libs
 

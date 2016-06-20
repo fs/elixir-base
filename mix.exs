@@ -9,7 +9,7 @@ defmodule ElixirBase.Mixfile do
      homepage_url: "https://github.com/fs/elixir-base",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     docs: [extras: ["README.md"]],
+     docs: [extras: ["README.md"], output: "./doc/app"],
      deps: deps]
   end
 
