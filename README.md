@@ -11,6 +11,7 @@ It's based on Elixir 1.2.
 
 * [Elixir release manager](https://github.com/bitwalker/exrm) for Elixir's apps release management
 * [Guardsafe](https://github.com/DevL/guardsafe) Macros expanding into code that can be safely used in guard clauses
+* [Monadex](https://github.com/rob-brown/MonadEx) Improve pipelines with monads
 
 ## Development libs
 

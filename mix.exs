@@ -30,6 +30,7 @@ defmodule ElixirBase.Mixfile do
     [
      {:exrm, "~> 1.0.5"},
      {:guardsafe, "~> 0.5.0"},
+     {:monadex, "~> 1.0.2"},
      {:credo, "~> 0.4", only: [:dev, :test]},
      {:dialyxir, "~> 0.3", only: [:dev]},
      {:observer_cli, "~> 1.0.5", only: [:dev]}
