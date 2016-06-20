@@ -17,8 +17,14 @@ defmodule ElixirBase.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger], mod: {ElixirBase, []}]
+    [applications: [:logger], mod: {ElixirBase, []},
+     elixirc_paths: elixirc_paths(Mix.env)]
   end
+
+  # This makes sure your factory and any other modules in test/support are compiled
+  # when in the test environment.
+  defp elixirc_paths(:test), do: ["lib", "web", "test/support"]
+  defp elixirc_paths(_), do: ["lib", "web"]
 
   # Dependencies can be Hex packages:
   #
@@ -39,8 +45,11 @@ defmodule ElixirBase.Mixfile do
      {:credo, "~> 0.4", only: [:dev, :test]},
      {:dialyxir, "~> 0.3", only: :dev},
      {:eper, "~> 0.94.0", only: :dev},
+     {:ex_machina, "~> 0.6.1", only: [:dev, :test]},
      {:ex_doc, "~> 0.11", only: :dev},
-     {:observer_cli, "~> 1.0.5", only: :dev}
+     {:observer_cli, "~> 1.0.5", only: :dev},
+     {:faker, "~> 0.5", only: :test},
+     {:mock, "~> 0.1.1", only: :test}
    ]
   end
 end

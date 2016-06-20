@@ -25,7 +25,10 @@ It's based on Elixir 1.2.
 
 ## Testing libs
 
+* [ExMachina](https://github.com/thoughtbot/ex_machina) makes it easy to create test data and associations
 * [ExUnit](http://elixir-lang.org/docs/stable/ex_unit/ExUnit.html) for unit testing
+* [Faker](https://github.com/igas/faker) pure Elixir library for generating fake data
+* [Mock](https://github.com/) mocking libary for the Elixir language
 
 ## Initializers
 
