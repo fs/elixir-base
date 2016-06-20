@@ -10,6 +10,7 @@ It's based on Elixir 1.2.
 ## Application libs
 
 * [Elixir release manager](https://github.com/bitwalker/exrm) for Elixir's apps release management
+* [Guardsafe](https://github.com/DevL/guardsafe) Macros expanding into code that can be safely used in guard clauses
 
 ## Development libs
 
