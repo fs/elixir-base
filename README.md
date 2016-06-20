@@ -9,6 +9,7 @@ It's based on Elixir 1.2.
 
 ## Application libs
 
+* [ErlExec](https://github.com/saleyn/erlexec) execute and control OS processes from Erlang/OTP
 * [Elixir release manager](https://github.com/bitwalker/exrm) for Elixir's apps release management
 * [Guardsafe](https://github.com/DevL/guardsafe) macros expanding into code that can be safely used in guard clauses
 * [Monadex](https://github.com/rob-brown/MonadEx) improve pipelines with monads

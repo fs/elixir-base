@@ -31,6 +31,7 @@ defmodule ElixirBase.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
+     {:erlexec, "~> 1.2.1"},
      {:exrm, "~> 1.0.5"},
      {:guardsafe, "~> 0.5.0"},
      {:monadex, "~> 1.0.2"},
