@@ -4,7 +4,7 @@
   "cf": {:hex, :cf, "0.2.1", "69d0b1349fd4d7d4dc55b7f407d29d7a840bf9a1ef5af529f1ebe0ce153fc2ab", [:rebar3], []},
   "combine": {:hex, :combine, "0.8.0", "390fe5f632a8c890d378abc697ca7c4c52cd3e38bb232a5cad1677cd4af013df", [:mix], []},
   "conform": {:hex, :conform, "0.16.0", "f6d6b207c693f2f939af8edeab7c735c4fd48552c63c0a019a52b6d2d98a1ca4", [:mix], [{:neotoma, "~> 1.7.3", [hex: :neotoma, optional: false]}]},
-  "credo": {:hex, :credo, "0.4.3", "29fe87aa2ef3c19bf8dd909594b9b79d9e2ed2857a153c00eb3f697f41cb6782", [:mix], [{:bunt, "~> 0.1.6", [hex: :bunt, optional: false]}]},
+  "credo": {:hex, :credo, "0.4.5", "5c5daaf50a2a96068c0f21b6fbd382d206702efa8836a946eeab0b8ac25f5f22", [:mix], [{:bunt, "~> 0.1.6", [hex: :bunt, optional: false]}]},
   "dialyxir": {:hex, :dialyxir, "0.3.3", "2f8bb8ab4e17acf4086cae847bd385c0f89296d3e3448dc304c26bfbe4b46cb4", [:mix], []},
   "earmark": {:hex, :earmark, "0.2.1", "ba6d26ceb16106d069b289df66751734802777a3cbb6787026dd800ffeb850f3", [:mix], []},
   "edeliver": {:hex, :edeliver, "1.2.9", "58f4c4b82447eee3b0af4327f5069750833ee2de3224f2ee53df4e4bf9afab75", [:mix], [{:exrm, ">= 0.16.0", [hex: :exrm, optional: false]}]},
