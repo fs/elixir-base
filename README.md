@@ -41,6 +41,7 @@ It's based on Elixir 1.3.
 * `bin/build` - to build application release
 * `bin/server` - to run server locally
 * `bin/docs` - to generate local docs
+* `bin/deploy` - to deploy using EDeliver
 
 ## Getting Started
 
