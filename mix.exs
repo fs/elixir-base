@@ -44,6 +44,7 @@ defmodule ElixirBase.Mixfile do
      {:timex, "~> 2.1.6"},
      {:credo, "~> 0.4", only: [:dev, :test]},
      {:dialyxir, "~> 0.3", only: :dev},
+     {:edeliver, ">= 1.2.9", only: :dev},
      {:eper, "~> 0.94.0", only: :dev},
      {:ex_machina, "~> 0.6.1", only: [:dev, :test]},
      {:ex_doc, "~> 0.11", only: :dev},

@@ -7,6 +7,7 @@
   "credo": {:hex, :credo, "0.4.3", "29fe87aa2ef3c19bf8dd909594b9b79d9e2ed2857a153c00eb3f697f41cb6782", [:mix], [{:bunt, "~> 0.1.6", [hex: :bunt, optional: false]}]},
   "dialyxir": {:hex, :dialyxir, "0.3.3", "2f8bb8ab4e17acf4086cae847bd385c0f89296d3e3448dc304c26bfbe4b46cb4", [:mix], []},
   "earmark": {:hex, :earmark, "0.2.1", "ba6d26ceb16106d069b289df66751734802777a3cbb6787026dd800ffeb850f3", [:mix], []},
+  "edeliver": {:hex, :edeliver, "1.2.9", "58f4c4b82447eee3b0af4327f5069750833ee2de3224f2ee53df4e4bf9afab75", [:mix], [{:exrm, ">= 0.16.0", [hex: :exrm, optional: false]}]},
   "eper": {:hex, :eper, "0.94.0", "f5fb2daa0df8878748e1c598428eda942a173e5121ff35c1d632129b84593a3a", [:rebar, :rebar], []},
   "erlexec": {:hex, :erlexec, "1.2.1", "0f028050ce1ec46c6962ab56fe5b6d085cbbf0a5e4036d44435537abf8c0e67d", [:rebar3], []},
   "erlware_commons": {:hex, :erlware_commons, "0.19.0", "7b43caf2c91950c5f60dc20451e3c3afba44d3d4f7f27bcdc52469285a5a3e70", [:rebar3], [{:cf, "0.2.1", [hex: :cf, optional: false]}]},

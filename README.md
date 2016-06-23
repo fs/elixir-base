@@ -20,6 +20,7 @@ It's based on Elixir 1.3.
 * [Credo](https://github.com/rrrene/credo) for reporting violations of the Elixir style guide
 * [Dialyzer](https://github.com/jeremyjh/dialyxir) for static analyse
 * [Eper](https://github.com/massemanet/eper) Erlang performance related tools
+* [EDeliver](https://github.com/boldpoker/edeliver) provides a bash script to build and deploy Elixir and Erlang applications and perform hot-code upgrades
 * [ExDoc](https://github.com/elixir-lang/ex_doc) tool to generate documentation for your Elixir projects
 * [Observer-CLI](https://github.com/zhongwencool/observer_cli) visualize Erlang nodes on the command line
 
@@ -110,6 +111,15 @@ heroku create --addons=heroku-postgresql,sendgrid,newrelic,rollbar --remote stag
 heroku config:add HOST="elixir-base-example.herokuapp.com"
 git push staging master
 heroku open
+```
+
+### EDeliver
+
+You can use [EDeliver](https://github.com/boldpoker/edeliver) to deploy Erlang releases on remote hosts. Provide .deliver/config configuration first:
+
+```bash
+  cp ~./.deliver/config.example ~/.deliver/config
+  ./bin/deploy
 ```
 
 ## Credits

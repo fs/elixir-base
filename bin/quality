@@ -3,4 +3,4 @@
 set -e
 
 mix dialyzer
-mix credo
+mix credo --strict
