@@ -9,6 +9,7 @@ defmodule ElixirBase.Mixfile do
      homepage_url: "https://github.com/fs/elixir-base",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
+     escript: [main_module: ElixirBase.CLI],
      docs: [extras: ["README.md"], output: "./doc/app"],
      deps: deps]
   end
@@ -41,6 +42,8 @@ defmodule ElixirBase.Mixfile do
      {:exrm, "~> 1.0.5"},
      {:guardsafe, "~> 0.5.0"},
      {:monadex, "~> 1.0.2"},
+     {:progress_bar, "> 0.0.0"},
+     {:table_rex, "~> 0.8.0"},
      {:timex, "~> 2.1.6"},
      {:credo, "~> 0.4", only: [:dev, :test]},
      {:dialyxir, "~> 0.3", only: :dev},
