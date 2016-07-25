@@ -15,7 +15,7 @@ defmodule ElixirBase.CLI do
       aliases: [h: :help]
 
     case parse do
-      { [help: true], _, _} -> :help
+      {[help: true], _, _} -> :help
       _ -> :help
     end
   end

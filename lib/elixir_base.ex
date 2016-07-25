@@ -3,7 +3,5 @@ defmodule ElixirBase do
     Entry point of library/application.
   """
 
-  def start(_type, _args) do
-    System.halt 0
-  end
+  def start(_type, _args), do: System.halt(0)
 end
