@@ -40,6 +40,7 @@ defmodule ElixirBase.Mixfile do
     [
      {:erlexec, "~> 1.2.1"},
      {:exrm, "~> 1.0.5"},
+     {:effects, "~> 0.1.0"},
      {:guardsafe, "~> 0.5.0"},
      {:monadex, "~> 1.0.2"},
      {:progress_bar, "> 0.0.0"},

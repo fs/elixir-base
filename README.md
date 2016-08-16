@@ -24,6 +24,7 @@ It's based on Elixir 1.3.
 * [Eper](https://github.com/massemanet/eper) Erlang performance related tools
 * [EDeliver](https://github.com/boldpoker/edeliver) provides a bash script to build and deploy Elixir and Erlang applications and perform hot-code upgrades
 * [ExDoc](https://github.com/elixir-lang/ex_doc) tool to generate documentation for your Elixir projects
+* [ExtensibleEffects](https://github.com/metalabdesign/effects) Monadic, softly-typed, extensible effect handling
 * [Observer-CLI](https://github.com/zhongwencool/observer_cli) visualize Erlang nodes on the command line
 
 ## Testing libs
