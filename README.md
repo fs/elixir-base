@@ -1,6 +1,6 @@
 # Elixir Base
 
-[![Build Status](https://semaphoreapp.com/api/v1/projects/31b68af8b073708a56e4e005bbcba2af4802816d/76140/shields_badge.png)](https://semaphoreapp.com/fs/elixir-base)
+[![Build Status](https://semaphoreci.com/api/v1/fs/elixir-base/branches/master/badge.svg)](https://semaphoreci.com/fs/elixir-base)
 [![Test Coverage](https://codeclimate.com/github/fs/elixir-base/badges/coverage.svg)](https://codeclimate.com/github/fs/elixir-base)
 [![Code Climate](https://codeclimate.com/github/fs/elixir-base.png)](https://codeclimate.com/github/fs/elixir-base)
 
