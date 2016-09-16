@@ -5,6 +5,7 @@
 erl_crash.dump
 *.ez
 log
+*.log
 doc/app
 .deliver/config
 

@@ -43,6 +43,7 @@ defmodule ElixirBase.Mixfile do
      {:effects, "~> 0.1.0"},
      {:guardsafe, "~> 0.5.0"},
      {:monadex, "~> 1.0.2"},
+     {:logger_file_backend, "~> 0.0.9"},
      {:progress_bar, "> 0.0.0"},
      {:table_rex, "~> 0.8.0"},
      {:timex, "~> 2.1.6"},

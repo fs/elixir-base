@@ -18,10 +18,19 @@ use Mix.Config
 #
 # Or configure a 3rd-party app:
 #
-config :logger, :console, level: :debug,
+config :logger, backends: [:console, {LoggerFileBackend, :file_log}]
+
+config :logger, :console,
+  level: :info,
   format: "$date $time [$node][$metadata][$level] $message\n",
   metadata: [:pid],
   colors: [info: :green]
+
+config :logger, :file_log,
+  path: "./log/elixir_base.log",
+  format: "$date $time [$node][$metadata][$level] $message\n",
+  level: :debug,
+  metadata: [:pid]
 
 # It is also possible to import configuration files, relative to this
 # directory. For example, you can emulate configuration per environment
