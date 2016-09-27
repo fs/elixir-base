@@ -12,6 +12,7 @@ It's based on Elixir 1.3.
 * [ErlExec](https://github.com/saleyn/erlexec) execute and control OS processes from Erlang/OTP
 * [Elixir release manager](https://github.com/bitwalker/exrm) for Elixir's apps release management
 * [Guardsafe](https://github.com/DevL/guardsafe) macros expanding into code that can be safely used in guard clauses
+* [LoggerFileBackend] for writing logs into file
 * [Monadex](https://github.com/rob-brown/MonadEx) improve pipelines with monads
 * [ProgressBar](https://github.com/henrik/progress_bar) for CLI progress bars
 * [TableRex](https://github.com/djm/table_rex) for CLI tables
