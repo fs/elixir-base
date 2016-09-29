@@ -11,8 +11,9 @@ It's based on Elixir 1.3.
 
 * [ErlExec](https://github.com/saleyn/erlexec) execute and control OS processes from Erlang/OTP
 * [Elixir release manager](https://github.com/bitwalker/exrm) for Elixir's apps release management
+* [ExtensibleEffects](https://github.com/metalabdesign/effects) Monadic, softly-typed, extensible effect handling
 * [Guardsafe](https://github.com/DevL/guardsafe) macros expanding into code that can be safely used in guard clauses
-* [LoggerFileBackend] for writing logs into file
+* [LoggerFileBackend](https://github.com/onkel-dirtus/logger_file_backend) for writing logs into file
 * [Monadex](https://github.com/rob-brown/MonadEx) improve pipelines with monads
 * [ProgressBar](https://github.com/henrik/progress_bar) for CLI progress bars
 * [TableRex](https://github.com/djm/table_rex) for CLI tables
@@ -25,7 +26,6 @@ It's based on Elixir 1.3.
 * [Eper](https://github.com/massemanet/eper) Erlang performance related tools
 * [EDeliver](https://github.com/boldpoker/edeliver) provides a bash script to build and deploy Elixir and Erlang applications and perform hot-code upgrades
 * [ExDoc](https://github.com/elixir-lang/ex_doc) tool to generate documentation for your Elixir projects
-* [ExtensibleEffects](https://github.com/metalabdesign/effects) Monadic, softly-typed, extensible effect handling
 * [Observer-CLI](https://github.com/zhongwencool/observer_cli) visualize Erlang nodes on the command line
 
 ## Testing libs
