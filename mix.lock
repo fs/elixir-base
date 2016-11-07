@@ -29,11 +29,12 @@
   "monadex": {:hex, :monadex, "1.0.2", "a35438e5b6224d5149d4578c7163681754bdabbc3183f15962296d50ef5ec7f7", [:mix], []},
   "neotoma": {:hex, :neotoma, "1.7.3", "d8bd5404b73273989946e4f4f6d529e5c2088f5fa1ca790b4dbe81f4be408e61", [:rebar], []},
   "observer_cli": {:hex, :observer_cli, "1.0.7", "54013653c72e75ff3b4b487342dfe56715c9749ff9c31a7de8f84d18a09e1c3c", [:mix, :rebar], [{:recon, "~> 2.3.1", [hex: :recon, optional: false]}]},
+  "ok": {:hex, :ok, "1.0.0", "6cdc2f0fa0c27614918ff4ea465e2fdb94042dd2c88bfdbdc6a4f9aca29129bc", [:mix], []},
   "progress_bar": {:hex, :progress_bar, "1.5.0", "22fd314c28bcc825b69ebad7c55ff72c9d3677adb475e03a5afbae1c356ca747", [:mix], []},
   "providers": {:hex, :providers, "1.6.0", "db0e2f9043ae60c0155205fcd238d68516331d0e5146155e33d1e79dc452964a", [:rebar3], [{:getopt, "0.8.2", [hex: :getopt, optional: false]}]},
   "recon": {:hex, :recon, "2.3.2", "4444c879be323b1b133eec5241cb84bd3821ea194c740d75617e106be4744318", [:rebar3], []},
   "relx": {:hex, :relx, "3.21.0", "91e1ea9f09b4edfda8461901f4b5c5e0226e43ec161e147eeab29f7761df6eb5", [:rebar3], [{:bbmustache, "1.0.4", [hex: :bbmustache, optional: false]}, {:cf, "0.2.1", [hex: :cf, optional: false]}, {:erlware_commons, "0.21.0", [hex: :erlware_commons, optional: false]}, {:getopt, "0.8.2", [hex: :getopt, optional: false]}, {:providers, "1.6.0", [hex: :providers, optional: false]}]},
-  "ssl_verify_fun": {:hex, :ssl_verify_fun, "1.1.0", "edee20847c42e379bf91261db474ffbe373f8acb56e9079acb6038d4e0bf414f", [:rebar, :make], []},
+  "ssl_verify_fun": {:hex, :ssl_verify_fun, "1.1.0", "edee20847c42e379bf91261db474ffbe373f8acb56e9079acb6038d4e0bf414f", [:make, :rebar], []},
   "table_rex": {:hex, :table_rex, "0.8.3", "1c68dfc6886d6f118f5047b0449d6402ae0ac5709064789e578c2f4659f4064b", [:mix], []},
   "timex": {:hex, :timex, "2.1.6", "2c59cd03074bccea47acd668c4dd6aad269879bcc9d6d4dd98fe0ffbaf48fcaa", [:mix], [{:combine, "~> 0.7", [hex: :combine, optional: false]}, {:gettext, "~> 0.10", [hex: :gettext, optional: false]}, {:tzdata, "~> 0.1.8 or ~> 0.5", [hex: :tzdata, optional: false]}]},
   "tzdata": {:hex, :tzdata, "0.5.9", "575be217b039057a47e133b72838cbe104fb5329b19906ea4e66857001c37edb", [:mix], [{:hackney, "~> 1.0", [hex: :hackney, optional: false]}]}}
