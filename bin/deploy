@@ -2,9 +2,16 @@
 
 set -e
 
-BRANCH=${1:-master};
+if [ $1 = "production" ]; then
+  DEST="production"
+  BRANCH="production"
+else
+  DEST="staging"
+  BRANCH="master"
+fi
 
-mix edeliver build release --branch=BRANCH --verbose
-mix edeliver deploy release to production --verbose
-mix edeliver start production --verbose
-mix edeliver migrate production up --verbose
+echo "Deploying $BRANCH to $DEST"
+
+mix edeliver build release $DEST --branch=$BRANCH --verbose
+mix edeliver deploy release $DEST --verbose
+mix edeliver start $DEST --verbose

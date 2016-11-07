@@ -1,15 +1,23 @@
 #!/usr/bin/env bash
 
-APP="elixir-base" # name of your release
+# PLEASE, ADD FOLLOWING LINES TO YOUR SSH CONFIG BEFORE START WORKING
+# Host ec2
+# Hostname ec2-[ip].compute.amazonaws.com
+# User ec2-user
+# IdentityFile ~/.ssh/ec2-key.pem
 
-BUILD_HOST="build-system.acme.org" # host where to build the release
-BUILD_USER="build" # local user at build host
-BUILD_AT="/tmp/erlang/my-app/builds" # build directory on build host
+APP="ec2" # name of your release
 
-STAGING_HOSTS="test1.acme.org test2.acme.org" # staging / test hosts separated by space
-STAGING_USER="test" # local user at staging hosts
-TEST_AT="/test/my-erlang-app" # deploy directory on staging hosts. default is DELIVER_TO
+GIT_CLEAN_PATHS="_build rel priv/generated"
 
-PRODUCTION_HOSTS="deploy1.acme.org deploy2.acme.org" # deploy / production hosts separated by space
-PRODUCTION_USER="production" # local user at deploy hosts
-DELIVER_TO="/opt/my-erlang-app" # deploy directory on production hosts
+BUILD_HOST="ec2" # host where to build the release
+BUILD_USER="ec2-user" # local user at build host
+BUILD_AT="/tmp/elixir/ec2/builds" # build directory on build host
+
+STAGING_HOSTS="ec2" # staging / test hosts separated by space
+STAGING_USER="ec2-user" # local user at staging hosts
+# TEST_AT="/test/ec2" # deploy directory on staging hosts. default is DELIVER_TO
+
+PRODUCTION_HOSTS="ec2" # deploy / production hosts separated by space
+PRODUCTION_USER="ec2" # local user at deploy hosts
+DELIVER_TO="/opt" # deploy directory on production hosts
