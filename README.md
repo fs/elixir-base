@@ -18,7 +18,6 @@ It's based on Elixir 1.3.
 * [OK](https://github.com/CrowdHailer/OK) macros for [elegant error handling in elixir pipelines](http://insights.workshop14.io/2015/10/18/handling-errors-in-elixir-no-one-say-monad.html)
 * [ProgressBar](https://github.com/henrik/progress_bar) for CLI progress bars
 * [TableRex](https://github.com/djm/table_rex) for CLI tables
-* [Timex](https://github.com/bitwalker/timex) rich, comprehensive Date/Time library for Elixir projects, with full timezone support
 
 ## Development libs
 
