@@ -15,6 +15,7 @@ It's based on Elixir 1.3.
 * [Guardsafe](https://github.com/DevL/guardsafe) macros expanding into code that can be safely used in guard clauses
 * [LoggerFileBackend](https://github.com/onkel-dirtus/logger_file_backend) for writing logs into file
 * [Monadex](https://github.com/rob-brown/MonadEx) improve pipelines with monads
+* [OK](https://github.com/CrowdHailer/OK) macros for [elegant error handling in elixir pipelines](http://insights.workshop14.io/2015/10/18/handling-errors-in-elixir-no-one-say-monad.html)
 * [ProgressBar](https://github.com/henrik/progress_bar) for CLI progress bars
 * [TableRex](https://github.com/djm/table_rex) for CLI tables
 * [Timex](https://github.com/bitwalker/timex) rich, comprehensive Date/Time library for Elixir projects, with full timezone support
@@ -45,7 +46,7 @@ It's based on Elixir 1.3.
 * `bin/build` - to build application release
 * `bin/server` - to run server locally
 * `bin/docs` - to generate local docs
-* `bin/deploy` - to deploy using EDeliver
+* `bin/deploy [production]` - to deploy using EDeliver
 
 ## Getting Started
 
