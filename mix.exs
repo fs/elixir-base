@@ -2,31 +2,33 @@ defmodule ElixirBase.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :elixir_base,
-     version: "0.0.1",
-     elixir: "~> 1.3",
-     name: "Elixir Base",
-     homepage_url: "https://github.com/fs/elixir-base",
-     build_embedded: Mix.env == :prod,
-     start_permanent: Mix.env == :prod,
-     escript: [main_module: ElixirBase.CLI],
-     docs: [extras: ["README.md"], output: "./doc/app"],
-     deps: deps]
+    [
+      app: :elixir_base,
+      version: "0.0.1",
+      elixir: "~> 1.3",
+      name: "Elixir Base",
+      homepage_url: "https://github.com/fs/elixir-base",
+      build_embedded: Mix.env == :prod,
+      start_permanent: Mix.env == :prod,
+      escript: [main_module: ElixirBase.CLI],
+      docs: [extras: ["README.md"], output: "./doc/app"],
+      deps: deps
+    ]
   end
 
   # Configuration for the OTP application
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: ~w(erlexec effects guardsafe monadex timex)a,
+    [applications: ~w(erlexec effects guardsafe monadex)a,
      mod: {ElixirBase, []},
      elixirc_paths: elixirc_paths(Mix.env)]
   end
 
   # This makes sure your factory and any other modules in test/support are compiled
   # when in the test environment.
-  defp elixirc_paths(:test), do: ["lib", "web", "test/support"]
-  defp elixirc_paths(_), do: ["lib", "web"]
+  defp elixirc_paths(:test), do: ~w(lib web test/support)
+  defp elixirc_paths(_), do: ~w(lib web)
 
   # Dependencies can be Hex packages:
   #
@@ -48,7 +50,6 @@ defmodule ElixirBase.Mixfile do
      {:logger_file_backend, "~> 0.0.9"},
      {:progress_bar, "> 0.0.0"},
      {:table_rex, "~> 0.8.0"},
-     {:timex, "~> 2.1.6"},
      {:credo, "~> 0.4", only: [:dev, :test]},
      {:dialyxir, "~> 0.3", only: :dev},
      {:edeliver, ">= 1.2.9", only: :dev},
