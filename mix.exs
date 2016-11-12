@@ -20,7 +20,7 @@ defmodule ElixirBase.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: ~w(erlexec effects guardsafe monadex)a,
+    [applications: ~w(erlexec effects guardsafe monadex timex)a,
      mod: {ElixirBase, []},
      elixirc_paths: elixirc_paths(Mix.env)]
   end
@@ -50,6 +50,7 @@ defmodule ElixirBase.Mixfile do
      {:logger_file_backend, "~> 0.0.9"},
      {:progress_bar, "> 0.0.0"},
      {:table_rex, "~> 0.8.0"},
+     {:timex, "~> 3.0"},
      {:credo, "~> 0.4", only: [:dev, :test]},
      {:dialyxir, "~> 0.3", only: :dev},
      {:edeliver, ">= 1.2.9", only: :dev},
