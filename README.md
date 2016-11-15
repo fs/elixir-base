@@ -18,6 +18,7 @@ It's based on Elixir 1.3.
 * [OK](https://github.com/CrowdHailer/OK) macros for [elegant error handling in elixir pipelines](http://insights.workshop14.io/2015/10/18/handling-errors-in-elixir-no-one-say-monad.html)
 * [ProgressBar](https://github.com/henrik/progress_bar) for CLI progress bars
 * [TableRex](https://github.com/djm/table_rex) for CLI tables
+* [Timex](https://github.com/bitwalker/timex) date and time operations
 
 ## Development libs
 
@@ -126,6 +127,33 @@ You can use [EDeliver](https://github.com/boldpoker/edeliver) to deploy Erlang r
   cp ~./.deliver/config.example ~/.deliver/config
   ./bin/deploy
 ```
+
+## Code style
+
+All Elixir code should be written following [Elixir Style Guide](https://github.com/levionessa/elixir_style_guide).
+
+## Architecture
+
+Please follow the next project structure:
+
+* `lib` - application sources
+* `lib/workers` - app workers
+* `lib/servers` - app GenServers
+* `lib/macroses` - your custom macroses or sigils
+* `lib/structs` - your structs
+* `config` - app configuration
+* `spec/lib` - application tests
+
+## Debugging
+
+* Use *IEx.pry* with *Erlang-history* for interactive console
+* *Observer* to observe started Erlang processes
+* Use Erlang's [dbg](http://erlang.org/doc/man/dbg.html) for debugging function calls
+* Use Erlang's *Debugger* with graphical interface
+
+## Testing
+
+Use ESpec to write RSpec-like tests.
 
 ## Credits
 
