@@ -2,7 +2,7 @@ defmodule ElixirBase.Supervisor do
   require Logger
 
   @moduledoc """
-    Timelapse daemon supervisor
+    Main app supervisor
   """
 
   use Supervisor

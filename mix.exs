@@ -51,15 +51,15 @@ defmodule ElixirBase.Mixfile do
      {:progress_bar, "> 0.0.0"},
      {:table_rex, "~> 0.8.0"},
      {:timex, "~> 3.0"},
-     {:credo, "~> 0.4", only: [:dev, :test]},
+     {:credo, "~> 0.4", only: ~w(dev test)a},
      {:dialyxir, "~> 0.3", only: :dev},
      {:edeliver, ">= 1.2.9", only: :dev},
      {:eper, "~> 0.94.0", only: :dev},
-     {:ex_machina, "~> 0.6.1", only: [:dev, :test]},
+     {:ex_machina, "~> 0.6.1", only: ~w(dev test)a},
      {:ex_doc, "~> 0.11", only: :dev},
      {:observer_cli, "~> 1.0.5", only: :dev},
-     {:faker, "~> 0.5", only: :test},
-     {:mock, "~> 0.1.1", only: :test}
+     {:espec, "~> 1.1.0", only: :test},
+     {:faker, "~> 0.5", only: :test,}
    ]
   end
 end
