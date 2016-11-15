@@ -25,7 +25,6 @@ defmodule ElixirBase.CLI do
       usage: elixir-base <opts>
       provide custom options
     """
-
-    System.halt 0
+    ElixirBase.Supervisor.start_link
   end
 end
