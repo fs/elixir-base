@@ -5,7 +5,7 @@ defmodule ElixirBase.Mixfile do
     [
       app: :elixir_base,
       version: "0.0.1",
-      elixir: "~> 1.3",
+      elixir: "~> 1.4",
       name: "Elixir Base",
       homepage_url: "https://github.com/fs/elixir-base",
       build_embedded: Mix.env == :prod,
