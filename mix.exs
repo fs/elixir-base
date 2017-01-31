@@ -12,7 +12,7 @@ defmodule ElixirBase.Mixfile do
       start_permanent: Mix.env == :prod,
       escript: [main_module: ElixirBase.CLI],
       docs: [extras: ["README.md"], output: "./doc/app"],
-      deps: deps
+      deps: deps()
     ]
   end
 
