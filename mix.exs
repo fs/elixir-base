@@ -51,7 +51,7 @@ defmodule ElixirBase.Mixfile do
      {:progress_bar, "> 0.0.0"},
      {:table_rex, "~> 0.8.0"},
      {:timex, "~> 3.0"},
-     {:credo, "~> 0.4", only: ~w(dev test)a},
+     {:credo, "~> 0.5", only: ~w(dev test)a},
      {:dialyxir, "~> 0.3", only: :dev},
      {:edeliver, ">= 1.2.9", only: :dev},
      {:eper, "~> 0.94.0", only: :dev},
