@@ -3,6 +3,7 @@ defmodule ElixirBase.CLI do
     CLI entry point
   """
 
+  @spec main(any) :: {:ok, pid}
   def main(args) do
     args
     |> parse_args
