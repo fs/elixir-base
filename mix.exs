@@ -69,7 +69,7 @@ defmodule ElixirBase.Mixfile do
       build: "release",
       server: "run",
       quality: ["dialyzer", "credo --strict"],
-      ci: ["run_espec", "quality"],
+      ci: ~w(run_espec quality),
       setup: [
         "local.hex --force",
         "local.rebar --force",

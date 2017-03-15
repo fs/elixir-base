@@ -1,7 +1,9 @@
 defmodule Mix.Tasks.SetupHistory do
   use Mix.Task
+  alias Mix.Shell
 
-  def run(_) do
-    Mix.Shell.cmd("MIX_ENV='test' mix espec --format=doc", fn(output) -> IO.write(output) end)
-  end
+  @moduledoc false
+
+  @spec run([String.t]) :: integer
+  def run(_), do: "bin/setup_history" |> Shell.cmd(&IO.write/1)
 end

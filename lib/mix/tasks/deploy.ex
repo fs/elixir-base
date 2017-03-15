@@ -1,42 +1,37 @@
 defmodule Mix.Tasks.Deploy do
-  use Mix.Task
+  require Logger
 
-  def run(["production"]) do
-    deploy("production", "production")
-  end
-  def run(_) do
-    deploy("staging", "master")
-  end
+  use Mix.Task
+  alias Mix.Shell
+
+  @moduledoc """
+  Deploys project using EDeliver. Accepts target environment as an argument.
+  """
+
+  @doc """
+  Deploys to `production` env from `production` branch
+  """
+  @spec run([String.t]) :: integer
+  def run(["production"]), do: deploy("production", "production")
+  @doc """
+  Default: deploys to `staging` env from `master` branch
+  """
+  @spec run([String.t]) :: integer
+  def run(_), do: deploy("staging", "master")
 
   defp deploy(dest, branch) do
-    IO.puts("Deploying #{dest} to #{branch}")
+    Logger.info("Deploying #{dest} to #{branch}")
 
-    build(dest, branch) |> release(dest) |> start(dest)
+    dest |> build(branch) |> release(dest) |> start(dest)
   end
 
-  defp build(dest, branch) do
-    cmd("mix edeliver build release #{dest} --branch=#{branch} --verbose")
-  end
+  defp build(dest, branch), do: execute("mix edeliver build release #{dest} --branch=#{branch} --verbose")
 
-  defp release(prev_status, dest) do
-    if prev_status == 0 do
-      cmd("mix edeliver deploy release #{dest} --verbose")
-    else
-      prev_status
-    end
-  end
+  defp release(0, dest), do: execute("mix edeliver deploy release #{dest} --verbose")
+  defp release(prev_status, _), do: prev_status
 
-  defp start(prev_status, dest) do
-    if prev_status == 0 do
-      cmd("mix edeliver start #{dest} --verbose")
-    else
-      prev_status
-    end
-  end
+  defp start(0, dest), do: execute("mix edeliver start #{dest} --verbose")
+  defp start(prev_status, _), do: prev_status
 
-  defp log(output), do: IO.write(output)
-
-  defp cmd(command) do
-    Mix.Shell.cmd(command, &log/1)
-  end
+  defp execute(command), do: command |> Shell.cmd(&IO.write/1)
 end

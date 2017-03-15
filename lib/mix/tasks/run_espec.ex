@@ -1,7 +1,9 @@
 defmodule Mix.Tasks.RunEspec do
   use Mix.Task
+  alias Mix.Shell
 
-  def run(_) do
-    Mix.Shell.cmd("MIX_ENV='test' mix espec --format=doc", fn(output) -> IO.write(output) end)
-  end
+  @moduledoc false
+
+  @spec run([String.t]) :: integer
+  def run(_), do: "MIX_ENV='test' mix espec --format=doc" |> Shell.cmd(&IO.write/1)
 end
