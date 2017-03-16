@@ -27,22 +27,22 @@ git clone git@github.com:account/repo.git
 cd repo
 
 # run setup script
-bin/setup
+mix setup
 
 # configure ENV variables in .env
 vim .env
 
 # run server
-bin/server
+mix server
 ```
 
 ## Scripts
 
-* `bin/setup` - setup required libraries and stuff
-* `bin/quality` - runs code style check tools
-* `bin/ci` - should be used in the CI or locally
-* `bin/build` - to build application release
-* `bin/server` - to run server locally
+* `mix setup` - setup required libraries and stuff
+* `mix quality` - runs code style check tools
+* `mix ci` - should be used in the CI or locally
+* `mix build` - to build application release
+* `mix server` - to run server locally
 
 ## Staging
 

@@ -39,13 +39,14 @@ It's based on Elixir 1.4.
 
 ## Scripts
 
-* `bin/setup` - setup required libraries and stuff
-* `bin/quality` - runs code style check tools
-* `bin/ci` - should be used in the CI or locally
-* `bin/build` - to build application release
-* `bin/server` - to run server locally
-* `bin/docs` - to generate local docs
-* `bin/deploy [production]` - to deploy using EDeliver
+* `mix setup` - setup required libraries and stuff
+* `mix quality` - runs code style check tools
+* `mix ci` - should be used in the CI or locally
+* `mix build` - to build application release
+* `mix server` - to run server locally
+* `mix docs` - to generate local docs
+* `mix deploy [production]` - to deploy using EDeliver
+* `bin/setup_history` - to install [erlang-history](https://github.com/ferd/erlang-history)
 
 ## Getting Started
 
@@ -71,19 +72,19 @@ Elixir v1.4 should be installed.
 3. Run setup script
 
   ```bash
-  bin/setup
+  mix setup
   ```
 
 4. Run test and quality suits to make sure all dependencies are satisfied and applications works correctly before making changes.
 
   ```bash
-  bin/ci
+  mix ci
   ```
 
 5. Run app
 
   ```bash
-  bin/server
+  mix server
   ```
 
 6. Update README
@@ -101,7 +102,7 @@ Elixir v1.4 should be installed.
 
 ### Elixir Release Manager
 
-Use `./bin/build` script to build Elixir application release.
+Use `mix build` task to build Elixir application release.
 
 ### Heroku
 
@@ -124,7 +125,7 @@ You can use [EDeliver](https://github.com/boldpoker/edeliver) to deploy Erlang r
 
 ```bash
   cp ~./.deliver/config.example ~/.deliver/config
-  ./bin/deploy
+  mix deploy
 ```
 
 ## Code style

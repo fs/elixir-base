@@ -12,7 +12,8 @@ defmodule ElixirBase.Mixfile do
       start_permanent: Mix.env == :prod,
       escript: [main_module: ElixirBase.CLI],
       docs: [extras: ["README.md"], output: "./doc/app"],
-      deps: deps()
+      deps: deps(),
+      aliases: aliases()
     ]
   end
 
@@ -61,5 +62,20 @@ defmodule ElixirBase.Mixfile do
      {:espec, "~> 1.1.0", only: :test},
      {:faker, "~> 0.5", only: :test,}
    ]
+  end
+
+  defp aliases do
+    [
+      build: "release",
+      server: "run",
+      quality: ["dialyzer", "credo --strict"],
+      ci: ~w(run_espec quality),
+      setup: [
+        "local.hex --force",
+        "local.rebar --force",
+        "deps.get",
+        "compile"
+      ]
+    ]
   end
 end
