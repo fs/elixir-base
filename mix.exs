@@ -74,8 +74,7 @@ defmodule ElixirBase.Mixfile do
         "local.hex --force",
         "local.rebar --force",
         "deps.get",
-        "compile",
-        "setup_history"
+        "compile"
       ]
     ]
   end

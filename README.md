@@ -46,6 +46,7 @@ It's based on Elixir 1.4.
 * `mix server` - to run server locally
 * `mix docs` - to generate local docs
 * `mix deploy [production]` - to deploy using EDeliver
+* `bin/setup_history` - to install [erlang-history](https://github.com/ferd/erlang-history)
 
 ## Getting Started
 
