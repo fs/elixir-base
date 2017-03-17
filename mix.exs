@@ -13,7 +13,13 @@ defmodule ElixirBase.Mixfile do
       escript: [main_module: ElixirBase.CLI],
       docs: [extras: ["README.md"], output: "./doc/app"],
       deps: deps(),
-      aliases: aliases()
+      aliases: aliases(),
+      dialyzer: [
+        plt_add_apps: [:mix],
+        flags: [
+          :unmatched_returns, :error_handling, :race_conditions, :underspecs
+        ]
+      ]
     ]
   end
 
@@ -53,7 +59,7 @@ defmodule ElixirBase.Mixfile do
      {:table_rex, "~> 0.8.0"},
      {:timex, "~> 3.0"},
      {:credo, "~> 0.5", only: ~w(dev test)a},
-     {:dialyxir, "~> 0.3", only: :dev},
+     {:dialyxir, "~> 0.5", only: :dev},
      {:edeliver, ">= 1.2.9", only: :dev},
      {:eper, "~> 0.94.0", only: :dev},
      {:ex_machina, "~> 0.6.1", only: ~w(dev test)a},

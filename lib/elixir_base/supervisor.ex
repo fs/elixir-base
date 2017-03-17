@@ -10,9 +10,10 @@ defmodule ElixirBase.Supervisor do
   def start_link,
     do: Supervisor.start_link(__MODULE__, :ok, name: ElixirBase.Supervisor)
 
-  @spec init(:ok) :: :ok
+  @spec init(:ok) ::
+    {:ok, {:supervisor.sup_flags, [Supervisor.Spec.spec]}}
   def init(:ok) do
-    Logger.info("Start Elixir Base supervisor")
+    _ = Logger.info("Start Elixir Base supervisor")
     children = []
     supervise(children, strategy: :one_for_one)
   end
