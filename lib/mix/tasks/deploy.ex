@@ -8,19 +8,18 @@ defmodule Mix.Tasks.Deploy do
   Deploys project using EDeliver. Accepts target environment as an argument.
   """
 
+  @spec run(any()) :: any()
   @doc """
   Deploys to `production` env from `production` branch
   """
-  @spec run([String.t]) :: integer
-  def run(["production"]), do: deploy("production", "production")
+  def run(["production"|_]), do: deploy("production", "production")
   @doc """
   Default: deploys to `staging` env from `master` branch
   """
-  @spec run([String.t]) :: integer
   def run(_), do: deploy("staging", "master")
 
   defp deploy(dest, branch) do
-    Logger.info("Deploying #{dest} to #{branch}")
+    _ = Logger.info("Deploying #{dest} to #{branch}")
 
     dest |> build(branch) |> release(dest) |> start(dest)
   end
