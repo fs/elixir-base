@@ -49,7 +49,7 @@ defmodule ElixirBase.Mixfile do
   defp deps do
     [
      {:erlexec, "~> 1.2.1"},
-     {:exrm, "~> 1.0.5"},
+     {:exrm, "~> 1.0.8"},
      {:effects, "~> 0.1.0"},
      {:guardsafe, "~> 0.5.0"},
      {:monadex, "~> 1.0.2"},
