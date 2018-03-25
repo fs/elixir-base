@@ -12,7 +12,7 @@ Some short project description. Link to Basecamp project will be fine too.
 
 ## Dependencies
 
-* Elixir 1.5
+* Elixir 1.6
 
 Setup required dependencies from `Brewfile`:
 ```bash
