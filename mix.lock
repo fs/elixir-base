@@ -12,7 +12,7 @@
   "edeliver": {:hex, :edeliver, "1.4.0", "c1713b3fabfa75d64770a28b715379be6631442b5d288fc92d45e037757dc9c8", [:mix], [{:distillery, ">= 0.8.0", [hex: :distillery, optional: true]}, {:exrm, ">= 0.16.0", [hex: :exrm, optional: true]}]},
   "effects": {:hex, :effects, "0.1.1", "1daab8e5bda97452910c7fb21ad167a406f71e428d0aad8acb99f775bf14fd0f", [:mix], []},
   "eper": {:hex, :eper, "0.94.0", "f5fb2daa0df8878748e1c598428eda942a173e5121ff35c1d632129b84593a3a", [:rebar], []},
-  "erlexec": {:hex, :erlexec, "1.2.2", "122edf6be532475dd44d2c99653439528e3b3799e2ee0125f2560bcca60a6716", [:rebar3], []},
+  "erlexec": {:hex, :erlexec, "1.2.2", "122edf6be532475dd44d2c99653439528e3b3799e2ee0125f2560bcca60a6716", [:rebar3], [], "hexpm"},
   "erlware_commons": {:hex, :erlware_commons, "1.0.5", "fc23d8e304140b65a811f653a76b2fb10b0ce744608caf86e9125ceb349c9442", [:rebar3], [{:cf, "0.2.2", [hex: :cf, repo: "hexpm", optional: false]}], "hexpm"},
   "espec": {:hex, :espec, "1.1.2", "d1cf60ee8f6fb8b0f1593097958762f870949238b0aa15788201728cb6e672dd", [:mix], [{:meck, "~> 0.8.4", [hex: :meck, optional: false]}]},
   "ex_doc": {:hex, :ex_doc, "0.13.2", "1059a588d2ad3ffab25a0b85c58abf08e437d3e7a9124ac255e1d15cec68ab79", [:mix], [{:earmark, "~> 1.0", [hex: :earmark, optional: false]}]},
