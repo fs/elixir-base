@@ -32,5 +32,5 @@ defmodule Mix.Tasks.Deploy do
   defp start(0, dest), do: execute("mix edeliver start #{dest} --verbose")
   defp start(prev_status, _), do: prev_status
 
-  defp execute(command), do: command |> Shell.cmd(&IO.write/1)
+  defp execute(command), do: command |> Shell.cmd([], &IO.write/1)
 end

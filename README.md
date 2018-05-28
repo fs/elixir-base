@@ -5,7 +5,7 @@
 [![Code Climate](https://codeclimate.com/github/fs/elixir-base.png)](https://codeclimate.com/github/fs/elixir-base)
 
 Elixir Base is the base Elixir library template used at Flatstack.
-It's based on Elixir 1.5.
+It's based on Elixir 1.6.
 
 ## Application libs
 
@@ -52,7 +52,7 @@ It's based on Elixir 1.5.
 
 ### Prepare dependencies
 
-Elixir v1.5 should be installed.
+Elixir v1.6 should be installed.
 
 ### Bootstrap application
 

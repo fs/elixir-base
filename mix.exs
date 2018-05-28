@@ -5,7 +5,7 @@ defmodule ElixirBase.Mixfile do
     [
       app: :elixir_base,
       version: "0.0.1",
-      elixir: "~> 1.5",
+      elixir: "~> 1.6",
       name: "Elixir Base",
       homepage_url: "https://github.com/fs/elixir-base",
       build_embedded: Mix.env == :prod,
@@ -49,7 +49,7 @@ defmodule ElixirBase.Mixfile do
   defp deps do
     [
      {:erlexec, "~> 1.2.1"},
-     {:exrm, "~> 1.0.5"},
+     {:distillery, "~> 1.5"},
      {:effects, "~> 0.1.0"},
      {:guardsafe, "~> 0.5.0"},
      {:monadex, "~> 1.0.2"},
@@ -58,7 +58,7 @@ defmodule ElixirBase.Mixfile do
      {:progress_bar, "> 0.0.0"},
      {:table_rex, "~> 0.8.0"},
      {:timex, "~> 3.0"},
-     {:credo, "~> 0.5", only: ~w(dev test)a},
+     {:credo, "~> 0.9", only: ~w(dev test)a},
      {:dialyxir, "~> 0.5", only: :dev},
      {:edeliver, ">= 1.2.9", only: :dev},
      {:eper, "~> 0.94.0", only: :dev},
